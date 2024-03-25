@@ -52,11 +52,12 @@ class Equipe {
         
     }
     public function getAfficherEquipe(){
-        $resultat =$this;
+        $resultat ="<div class='container blue'>"."<div class='equipe'>"."<h2>$this</h2>"."<br></div>";
         foreach ( $this->carrieres as $carriere) {
-        $resultat.= $carriere->getJoueurs(). " (".$carriere->getDateJ().")";;
+        $resultat.= "<div class='texte'>".$carriere->getJoueurs(). " (".$carriere->getDateJ().")"." <br></div>";
             
         }
+        $resultat.="</div>";
         return $resultat;
     }
 

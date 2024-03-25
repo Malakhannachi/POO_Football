@@ -52,19 +52,21 @@ class Pay {
     public function addJoueurs (Joueur $joueur){
         $this->joueurs[]=$joueur;
     }
-
-    public function getAfficherPay(){
-        $resultat =$this;
-        foreach ( $this->equipes as $equipe) {
-            $resultat.= $equipe;
-            
-        } 
-        return $resultat;
-    }
-
     public function addEquipe (Equipe $equipe){
         $this->equipes[]=$equipe;
     }
+
+    public function getAfficherPay(){
+        $resultat ="<div class='container pink'>"."<div class='pay'>"."<h2>$this</h2>"."<br></div> ";
+        foreach ( $this->equipes as $equipe) {
+            $resultat.= "<div class='nom'>".$equipe ." <br></div>";
+            
+        } 
+        $resultat.="</div>" ;
+        return $resultat;
+    }
+
+   
 
 
     public function __toString()

@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    
+
+
+
 <?php
 
 spl_autoload_register(function($class_name){
@@ -30,13 +43,18 @@ $c2 = new Carriere($lionelMessi, $psg, "01-01-2015");
 $c3= new Carriere($lionelMessi, $barcelone, "01-01-2017");
 
 
-
-echo $ronaldo->getAfficherEquipe(). "<br>";
-echo $lionelMessi ->getAfficherEquipe(). "<br>";
-
-echo $manchesterUnited-> getAfficherEquipe(). "<br>";
-echo $psg-> getAfficherEquipe(). "<br>";
-
-
-echo $espagne->getAfficherPay(). "<br>";
+echo "<div class='aff'>";
+echo $espagne->getAfficherPay();
 echo $france->getAfficherPay();
+echo "</div>";
+
+echo "<div class='aff'>". $manchesterUnited-> getAfficherEquipe(). "<br>";
+echo $psg-> getAfficherEquipe(). "<br></div>";
+
+echo "<div class='aff'>". $ronaldo->getAfficherJ(). "<br>";
+echo $lionelMessi ->getAfficherJ(). "<br></div>";
+
+
+?>
+</body>
+</html>

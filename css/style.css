@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+.pink{
+    background: #bc6665;
+}
+.blue{
+    background: #6783b3;
+}
+.vert{
+    background: #6aaf5c;
+}
+.aff{
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+.pay h2{
+    
+    font-size: medium;
+    text-align: left;
+    color:#fff;       
+    
+}
+.nom{
+    font-size: small;
+    color:#fff; 
+  
+}
+.equipe h2{
+    
+    font-size: medium;
+    text-align: left;
+    color:#fff;           
+}
+ .texte{
+    font-size: small;
+    color:#fff; 
+}
+.joueur h2{
+   
+    font-size: medium;
+    text-align: left;
+    color:#fff; 
+}
+.affichage{
+    font-size: small;
+    color:#fff; 
+}
+.aff2{
+    font-size: small;
+    color:#fff;  
+}

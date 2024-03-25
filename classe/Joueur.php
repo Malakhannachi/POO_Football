@@ -81,13 +81,15 @@ class Joueur {
         
     }
 
-    public function getAfficherEquipe(){
-        $resultat =$this." ".$this->getAge()." ".$this->getPays();
-        
+    public function getAfficherJ(){
+        $resultat ="<div class='container vert'>"."<div class='joueur'>"."<h2>$this</h2>"."<br></div>";
+        $resultat .="<div class='affichage'>".$this->getPays()." ".$this->getAge()." "."ans"."<br></div>";
         foreach ( $this->carrieres as $carriere) {
-            $resultat.= $carriere->getEquipes(). " (".$carriere->getDateJ().")";
+            $resultat.= "<div class='aff2'>". $carriere->getEquipes(). ' ('.$carriere->getDateJ().')'." <br></div>";
             
         }
+
+        $resultat.="</div>";
         return $resultat;
     }
 
